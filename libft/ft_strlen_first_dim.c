@@ -17,7 +17,7 @@ int		ft_strlen_first_dim(char **str)
 	int i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (*str[i] != '\0')
 		i++;
 	return (i);
 }
