@@ -92,7 +92,6 @@ int				main(int ac, char **av, char **env)
 	signal(SIGQUIT, get_signal);
 	signal(SIGTSTP, get_signal);
 	env_to_stc(&stc);
-	tputs(tgetstr("im", &(lst.p)), 0, ft_outc);
 	loop_primary(&stc, &lst);
 	return (0);
 }
